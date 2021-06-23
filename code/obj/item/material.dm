@@ -425,6 +425,13 @@
 		src.setMaterial(getMaterial("fibrilith"), appearance = 0, setname = 0)
 		return ..()
 
+/obj/item/raw_material/nanocrystal
+	name = "synthetic nanocrystal"
+	desc = "A crystaline sheet of nanocrystal, a material used in high tech electronic applications"
+	setup_material()
+		src.setMaterial(getMaterial("nanocrystal"), appearance = 0, setname = 0)
+		return ..()
+
 /obj/item/raw_material/telecrystal
 	name = "telecrystal"
 	desc = "A large unprocessed telecrystal, a gemstone with space-warping properties."

@@ -244,10 +244,12 @@
 /datum/ore/nanite
 	name = "nanite cluster"
 	output = /obj/item/material_piece/cloth/carbon
+	events = list(/datum/ore/event/gem)
+	gems = list(/obj/item/raw_material/nanocrystal)
 	tiles_per_rock_min = 5
 	tiles_per_rock_max = 15
 	hardness_mod = 2
-	rarity_tier = 3
+	rarity_tier = 1
 	amount_per_tile_min = 1
 	amount_per_tile_max = 1
 	no_pick = 1

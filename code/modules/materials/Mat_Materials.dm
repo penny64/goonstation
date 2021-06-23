@@ -498,6 +498,18 @@
 	material_flags = MATERIAL_CRYSTAL
 	color = "#A3DCFF"
 
+/datum/material/crystal/nanocrystal
+	material_flags = MATERIAL_CRYSTAL | MATERIAL_ENERGY | MATERIAL_RUBBER
+	mat_id = "nanocrystal"
+	name = "synthetic nanocrystal"
+	desc = "Synthetic nanocrystal functions as a semiconductor or an insulator depending on it's configuration."
+	New()
+		setProperty("electrical", 20)
+		setProperty("thermal", 40)
+		setProperty("stability", 20)
+
+		. = ..()
+
 /datum/material/crystal/glass
 	mat_id = "glass"
 	name = "glass"
